@@ -1,0 +1,12 @@
+.todo-table a.list-group-item.list-group-item-action:hover{
+	text-decoration: line-through;
+}
+/*
+.todo-table:before{
+	content: "";
+	background-image: url("./app.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+*/

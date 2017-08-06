@@ -1,0 +1,13 @@
+<% include partials/header.ejs %>
+<h1 class="text-center">ToDo Lists</h1>
+<div class="list-group text-muted todo-table">
+	<form class="form-inline list-group-item">
+		<label for="item" class="sr-only">Add new item</label>
+		<input type="text" name="item" class="form-control mr-2" placeholder="Add new item..." required />
+		<button type="submit" class="btn btn-outline-success">Add Item</button>
+	</form>
+	<% todos.forEach(function(todo){ %>
+		<a href="#" class="list-group-item list-group-item-action"><%= todo.item %></a>
+	<% }); %>
+</div>
+<% include partials/footer.ejs %>
